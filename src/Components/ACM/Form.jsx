@@ -35,7 +35,7 @@ const Form = (prop) => {
             <div className="col-xl-3 col-lg-6 col-12 mb-3">
               <select
                 type="password"
-                class="form-select "
+                className="form-select "
                 aria-label=".form-select-sm example"
                 name="role"
                 value={prop.data.role}
