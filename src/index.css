@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Catamaran", sans-serif;
+}
+
+/* ===================================================================================
+#header
+==================================================================================== */
+.header_li {
+  /* border-bottom: 2px solid black;
+  border-top: 2px solid black; */
+  font-size: large;
+  transition: all 300ms;
+  position: relative;
+  color: rgb(89, 102, 172) !important;
+}
+
+.header_li::before {
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid rgb(89, 102, 172);
+  border-top: 1px solid rgb(89, 102, 172);
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.heading_1 {
+  color: rgb(89, 102, 172) !important;
+  font-size: 50px !important;
+}
+.brand {
+  text-transform: uppercase;
+  color: rgb(89, 102, 172) !important;
+  font-size: 23px !important;
+  animation: zoom 1s ease both;
+}
+@keyframes zoom {
+  0% {
+    transform: translateX(-610px);
+  }
+  60% {
+    transform: translateX(100px);
+  }
+  90% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.li_item {
+  padding: 0 5px;
+}
+.header_ul {
+  margin-left: auto !important;
+  animation: zoo 1s ease both;
+}
+@keyframes zoo {
+  0% {
+    transform: translateX(610px);
+  }
+  60% {
+    transform: translateX(-100px);
+  }
+  90% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* ===================================================================================
+#home
+==================================================================================== */
+
+.img_div {
+  width: 100%;
+  height: 100%;
+  animation: img 2s ease-in-out infinite alternate-reverse both;
+}
+.img_emp {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.title {
+  color: rgb(89, 102, 172) !important;
+}
+@keyframes img {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 
+===================================================================================
+#footer
+====================================================================================  */
+.footer {
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+}
+.role {
+  font-size: 11px;
+  /* color: black !important; */
+}
+
+/* 
+===================================================================================
+#contoller
+====================================================================================  */
+.c_table thead {
+  background-color: rgb(124, 132, 175);
+  color: white;
+}
+.enter {
+  color: rgb(147, 157, 216);
+}
+
+.enter:hover {
+  animation: enter 1s ease-in-out both;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(134, 144, 200);
+}
+
+@keyframes enter {
+  0% {
+    transform: rotate(0deg);
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: translateX(20px);
+  }
+}
