@@ -7,7 +7,7 @@ const EmpCard = (prop) => {
         {prop.emp.map((val, index) => {
           return (
             <>
-              <div className=" col-xl-4  col-lg-6 col-12 mx-auto">
+              <div className=" col-xl-4  col-lg-6 col-12 mx-auto" key={index}>
                 <div className="card mb-3 card">
                   <div className="row g-0">
                     <div className="col-md-4 overflow-hidden">

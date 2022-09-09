@@ -9,8 +9,8 @@ const Table = (prop) => {
   };
   return (
     <>
-      <table class="table table-wrap table-borderless text-uppercase text-center table-centered mb-0 ">
-        <thead class="bg-light text-dark">
+      <table className="table table-wrap table-borderless text-uppercase text-center table-centered mb-0 ">
+        <thead className="bg-light text-dark">
           <tr>
             <th>#</th>
             <th>Name</th>
@@ -22,7 +22,7 @@ const Table = (prop) => {
           {prop.content.map((value, index) => {
             return (
               <>
-                <tr>
+                <tr key={index}>
                   <th scope="row">{index + 1}</th>
                   <td className="fs-6 text-uppercase ">{value.name}</td>
                   <td className="text-uppercase"> {value.role}</td>
